@@ -1,0 +1,18 @@
+num1=int(input("Enter Number 1:"))
+num2=int(input("Enter Number 2:"))
+
+sum=num1+num2
+print("Addition=",sum)
+
+sub=num1-num2
+print("Subtraction=",sub)
+
+multiplication=num1*num2
+print("Multiplication=",multiplication)
+
+
+div=num1/num2
+print("division=",div)
+
+sub=num1-num2
+print("Subtraction=",sub)
