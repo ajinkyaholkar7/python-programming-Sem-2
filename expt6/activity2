@@ -1,0 +1,35 @@
+# code for reading and displaying feedback 
+"""
+Created on Mon Mar 23 10:46:40 2026
+
+@author: Ajinkya
+"""
+
+file_name = "complaints.txt"
+with open(file_name, "w") as file:
+    file.write("Customer Complaints:\n")
+    file.write("1. Delay in delivery\n")
+    file.write("2. Damaged product received\n")
+    file.write("3. Wrong item delivered\n")
+    file.write("4. Poor customer service\n")
+
+print(f"Data written to {file_name} successfully.\n")
+
+print("Reading all complaints:")
+with open(file_name, "r") as file:
+    content = file.read()
+    print(content)
+
+
+with open(file_name, "a") as file:
+    file.write("5. Payment issue\n")
+
+print("After appending a new complaint:")
+with open(file_name, "r") as file:
+    print(file.read())
+
+
+with open(file_name, "r") as file:
+    lines = file.readlines()
+
+print("Total number of complaints:", len(lines) - 1)  
