@@ -1,0 +1,26 @@
+# code to prvent crash while dividing bill among zero prople
+"""
+Created on Mon Mar 30 10:58:03 2026
+
+@author: Ajinkya
+"""
+
+try:
+    total_bill = float(input("Enter total bill amount: "))
+    people = int(input("Enter number of people: "))
+
+    # Prevent division by zero
+    if people == 0:
+        raise ZeroDivisionError
+
+    amount_per_person = total_bill / people
+    print("Each person should pay:", amount_per_person)
+
+except ZeroDivisionError:
+    print("Error: Cannot divide bill among zero people.")
+
+except ValueError:
+    print("Error: Please enter valid numeric input.")
+
+finally:
+    print("Bill splitting process completed.")
