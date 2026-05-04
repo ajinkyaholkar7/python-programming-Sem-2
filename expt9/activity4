@@ -1,0 +1,16 @@
+# Show weekday in office attendance app.
+"""
+Created on Mon May  4 15:42:10 2026
+
+@author:Ajinkya
+"""
+
+from datetime import datetime
+
+# Get current date
+today = datetime.now()
+
+# Get weekday name
+weekday = today.strftime("%A")
+
+print(f"Today is: {weekday}")
