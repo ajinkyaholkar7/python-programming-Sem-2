@@ -1,0 +1,19 @@
+#Calculate distance using math formulas.
+"""
+Created on Mon May  4 15:40:58 2026
+
+@author: ajinkya
+"""
+
+import math
+
+# Input coordinates
+x1 = float(input("Enter x1: "))
+y1 = float(input("Enter y1: "))
+x2 = float(input("Enter x2: "))
+y2 = float(input("Enter y2: "))
+
+# Distance formula
+distance = math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2))
+
+print(f"Distance between points is: {distance}")
